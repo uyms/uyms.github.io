@@ -1,0 +1,17 @@
+.photo{
+	float:left;
+}
+
+.addresstag{
+	float:left;
+	margin-left: 3px;
+	margin-top:15px;
+	/*border: 1px solid black;*/
+	font-weight:normal;
+}
+
+#primaryContent .noborder{
+	border: none;
+	margin-bottom:0px;
+
+}

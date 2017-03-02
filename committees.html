@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+	Design by Free CSS Templates
+	http://www.freecsstemplates.org
+	Released for free under a Creative Commons Attribution 2.5 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>UYMS 2017</title>
+<meta name="keywords" content="UYMS, ulusal, yazılım, yazilim, müdendisliği, uyms17, uyms2017, konferans, esem 2017, 2017, sempozyum, software engineering conference, conferences" />
+<meta name="description" content="11. Ulusal Yazılım Mühendisliği Sempozyumu web sayfası. UYMS 2017."/>
+	
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+	
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+	
+}
+	function currentSlide(n) {
+  showDivs(slideIndex = n);
+		
+}
+	function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+</script>
+<script>
+              !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+            </script>
+
+<script src="http://widgets.twimg.com/j/2/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 200,
+  height: 600,
+  theme: {
+    shell: {
+      background: '#98AFC7',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#2554C7',
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('UYMS').start();
+</script>
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="home_style.css" rel="stylesheet" type="text/css" />
+<link href="add_style.css" rel="stylesheet" type="text/css" />
+ <link rel="icon" href="images/favicon.ico" >
+</head>
+
+<body width="100%" onLoad="showSlides(),MM_preloadImages('images/sponsors/ieee.jpg','images/sigsoft_logo.png','images/logoESEM.png','images/home_buttons/promise_down.png','images/home_buttons/ISERN_down.png','images/home_buttons/idoese_down.png','images/home_buttons/iasese_down.png','images/home_buttons/reser_down.png','images/home_buttons/metrisec_down.png','images/home_buttons/ESEM_down.png','images/sponsors/acm.jpg')">
+
+
+<div id="outer">
+	<div id="header">
+		<img src="images/uyms_logo.jpg" alt="UYMS 2017" />	
+		</div>
+    <div id="menu">
+        <ul>
+            <!-- live links -->
+            <li class="first style1"><a href="index.html" title="Ana Sayfa" target="_self">Ana Sayfa</a></li>
+			<li class="first style1"><a href="callforpapers.html">Bildiri Çağrısı</a></li>
+			<li class="first style1"><a href="siym.html">SiYM Alt Alanı</a></li>
+			<li class="first style1"><a href="ytm.html">YTM Alt Alanı</a></li>
+			<li class="first style1"><a href="dates.html">Önemli Tarihler</a></li>
+			<li class="first style1"><a href="committees.html">Organizasyon</a></li>
+            <li class="first style1"><a href="venue.html" title="Yer &amp; Konaklama" target="_self">Yer &amp; Konaklama</a></li>
+            <li class="first style1"><a href="registration.html">Kayıt</a></li>
+			<li class="first style1"><a href="poster.html">Afiş</a></li>
+            <li class="first style1"><a href="program.html">Program</a></li>
+			<li class="first style1"><a href="about.html">İletişim</a></li>
+            </ul></div>
+	
+	</div>
+	
+
+<div id="content">
+
+	
+	
+	<!--CONTENT BEGINS HERE-->
+	
+	
+		<div id="primaryContentContainer" style="width: 60%;">
+		
+		<h2>Organizasyon</h2>
+
+		<strong>Organizasyon Komitesi</strong><br />
+		&nbsp;&nbsp;Barış Özkan (Eşbaşkan), Atılım Üniversitesi<br />
+		&nbsp;&nbsp;Tülay Görü Doğan (Eşbaşkan), Alanya HEP<br />
+		&nbsp;&nbsp;Ali Yazıcı, Atılım Üniversitesi<br />
+		&nbsp;&nbsp;Erol Sayın, Alanya HEP <br />
+		&nbsp;&nbsp;Murat Ertan Doğan, Alanya HEP<br />
+		&nbsp;&nbsp;İbrahim Akman, Atılım Üniversitesi<br />
+		&nbsp;&nbsp;Korhan Levent Ertürk, Atılım Üniversitesi<br />
+		&nbsp;&nbsp;<br />
+
+
+		
+		<strong>Sağlık için Yazılım Mühendisliği Alt Alanı Eş Başkanları</strong><br />
+		&nbsp;&nbsp;Nergiz Çağıltay, Atılım Üniversitesi<br />
+		&nbsp;&nbsp;Ayça Tarhan, Hacettepe Üniversitesi<br />
+		<br />
+		
+		<strong>Yazılım Test Mühendisliği Alt Alanı Eş Başkanları</strong><br />
+		&nbsp;&nbsp;Sadık Eşmelioğlu<br />
+		&nbsp;&nbsp;Vahid Garousi, Hacettepe Üniversitesi<br />		
+		<br />
+		
+		<strong>Program Komitesi</strong><br />
+		&nbsp;&nbsp;Ali Yazıcı (Eşbaşkan), Atılım Üniversitesi<br />
+		&nbsp;&nbsp;Halit Oğuztüzün (Eşbaşkan), ODTÜ<br />
+		
+		&nbsp;&nbsp;Ahmet Coskuncay, Bilgi Grubu Ltd. Şti.<br />
+		&nbsp;&nbsp;Ahmet Egesoy, Ege Üniversitesi<br />
+		&nbsp;&nbsp;Alev Mutlu, Kocaeli Üniversitesi<br />
+		&nbsp;&nbsp;Ali Doğru, ODTÜ<br />
+		&nbsp;&nbsp;Ali Murat Tiryaki, Çanakkale 18 Mart Üniversitesi<br />
+		&nbsp;&nbsp;Alok Mishra, Atılım Üniversitesi<br />
+		&nbsp;&nbsp;Alp Kut , Dokuz Eylül Üniversitesi<br />
+		&nbsp;&nbsp;Alper Şen, Boğazici Üniversitesi<br />
+		&nbsp;&nbsp;Altan Koçyiğit, ODTÜ<br />
+		&nbsp;&nbsp;Aras Bozkurt, Anadolu Üniversitesi<br />
+		&nbsp;&nbsp;Ayça Tarhan, Hacettepe Üniversitesi<br />
+		&nbsp;&nbsp;Aysu Betin Can, ODTÜ<br />
+		&nbsp;&nbsp;Ayşe Bener, Ryerson University<br />
+		&nbsp;&nbsp;Banu Aysolmaz, VU University Amsterdam<br />
+		&nbsp;&nbsp;Banu Diri, Yıldız Teknik Üniversitesi<br />
+		&nbsp;&nbsp;Barış Aktemur, Özyeğin Üniversitesi<br />
+		&nbsp;&nbsp;Barış Özkan, Atılım Üniversitesi<br />
+		&nbsp;&nbsp;Barış Sarıalioğlu, Keytorc Software Testing Services<br />
+		&nbsp;&nbsp;Barış Sertkaya, Frankfurt Univ. of Applied Sciences<br />
+		&nbsp;&nbsp;Bedir Tekinerdoğan, Wageningen University<br />
+		&nbsp;&nbsp;Belgin Ergenç, İzmir Yüksek Teknoloji Enstitüsü<br />
+		&nbsp;&nbsp;Cağdaş Gerede, UCSB<br />
+		&nbsp;&nbsp;Cemal Yılmaz, Sabancı Üniversitesi<br />
+		&nbsp;&nbsp;Cemil Ulu, TCMB<br />
+		&nbsp;&nbsp;Cengiz Toğay, Uludağ Üniversitesi<br />
+		&nbsp;&nbsp;Çağatay Çatal, İstanbul Kültür Üniversitesi<br />
+		&nbsp;&nbsp;Çağatay Göncü, Monash University<br />
+		&nbsp;&nbsp;Davut İncebacak, Kocaeli Üniversitesi<br />
+		&nbsp;&nbsp;Deniz Çetinkaya, Bournemouth University<br />
+		&nbsp;&nbsp;Deniz Kılınç, Celal Bayar Üniversitesi<br />
+		&nbsp;&nbsp;Ebru Aydın-Göl, ODTÜ<br />
+		&nbsp;&nbsp;Eray Tüzün, HAVELSAN<br />
+		&nbsp;&nbsp;Erdem Eser Ekinci, Glaksiya<br />
+		&nbsp;&nbsp;Erdir Ungan, Bilgi Grubu Ltd. Şti.<br />
+		&nbsp;&nbsp;Ethem Arkın, ASELSAN<br />
+		&nbsp;&nbsp;Fevzi Belli, University of Paderborn<br />
+		&nbsp;&nbsp;Filiz Yeşildoruk, TCMB<br />
+		&nbsp;&nbsp;Geylani Kardaş, Ege Üniversitesi<br />
+		&nbsp;&nbsp;Göksel Biricik, Yıldız Teknik Üniversitesi<br />
+		&nbsp;&nbsp;Görkem Güray, JTI<br />
+		&nbsp;&nbsp;Gülfem Işıklar Alptekin, Galatasaray Üniversitesi<br />
+		&nbsp;&nbsp;Gülsün Kurubacak, Anadolu Üniversitesi<br />
+		&nbsp;&nbsp;Güray Yılmaz, TuAF<br />
+		&nbsp;&nbsp;Hasan Sözer. Özyeğin Üniversitesi<br />
+		&nbsp;&nbsp;Hayri Sever, Hacettepe Üniversitesi<br />
+		&nbsp;&nbsp;Hüsnü Yenigün, Sabanci Üniversitesi<br />
+		&nbsp;&nbsp;İlknur Çelik, ODTÜ - KKTC Yerleşkesi<br />
+		&nbsp;&nbsp;İpek Özkaya,Carnegie Mellon SEI<br />
+		&nbsp;&nbsp;Kamer Kaya, Sabancı Üniversitesi<br />
+		&nbsp;&nbsp;Kayhan İmre, Hacettepe Üniversitesi<br />
+		&nbsp;&nbsp;Levent Alkışlar, ASELSAN<br />
+		&nbsp;&nbsp;Mehmet Aktaş, Yıldız Teknik Üniversitesi<br />
+		&nbsp;&nbsp;Mehmet Adak, ASELSAN<br />
+		&nbsp;&nbsp;Mehmet Okur, Yaşar Üniversitesi<br />
+		&nbsp;&nbsp;Murat Erten, İzmir Yüksek Teknoloji Enstitüsü<br />
+		&nbsp;&nbsp;Murat Karakaya, Atılım Üniversitesi<br />
+		&nbsp;&nbsp;Murat Kömesli, Yaşar Üniversitesi<br />
+		&nbsp;&nbsp;Murat Osman Ünalır, Ege Üniversitesi<br />
+		&nbsp;&nbsp;Murat Paşa Uysal, Ufuk Üniversitesi<br />
+		&nbsp;&nbsp;Murat Yılmaz, Çankaya Üniversitesi<br />
+		&nbsp;&nbsp;Mustafa Sarı, TÜBİTAK BİLGEM<br />
+		&nbsp;&nbsp;Nadia Erdoğan, İTÜ<br />
+		&nbsp;&nbsp;Oğuz Dikenelli, Ege Üniversitesi<br />
+		&nbsp;&nbsp;Okan Topçu, ODTÜ - KKTC Yerleşkesi<br />
+		&nbsp;&nbsp;Oktay Türetken, Eindhoven University of Technology<br />
+		&nbsp;&nbsp;Onur Aktuğ, ASELSAN<br />
+		&nbsp;&nbsp;Onur Demirörs, ODTÜ<br />
+		&nbsp;&nbsp;Orçun Dayıbaş, HAVELSAN<br />
+		&nbsp;&nbsp;Oumut Chouseinoglu, Hacettepe Üniversitesi<br />
+		&nbsp;&nbsp;Oya Kalıpsız, Yıldız Teknik Üniversitesi<br />
+		&nbsp;&nbsp;Özden Özcan Top, Dundalk Institute of Technology<br />
+		&nbsp;&nbsp;Ömer Özgür Tanrıöver, Ankara Üniversitesi<br />
+		&nbsp;&nbsp;Özgür Ulusoy, Bilkent Üniversitesi<br />
+		&nbsp;&nbsp;Özkan Yıldız, Başbakanlık<br />
+		&nbsp;&nbsp;Özlem Albayrak, MEBİTECH BİLİŞİM A.Ş.<br />
+		&nbsp;&nbsp;Özlem Ozan, Yaşar Üniversitesi<br />
+		&nbsp;&nbsp;P. Erhan Eren, ODTÜ<br />
+		&nbsp;&nbsp;Pınar Karagöz, ODTÜ<br />
+		&nbsp;&nbsp;Pınar Onay Durdu, Kocaeli Üniversitesi<br />
+		&nbsp;&nbsp;Rıza Cenk Erdur, Ege Üniversitesi<br />
+		&nbsp;&nbsp;Sadik Eşmelioğlu, ODTÜ<br />
+		&nbsp;&nbsp;Seçkin Tunalılar, ASELSAN - ODTÜ<br />
+		&nbsp;&nbsp;Selami Bağrıyanık, Turkcell Teknoloji<br />
+		&nbsp;&nbsp;Selçuk Güceğlioğlu, Başbakanlık<br />
+		&nbsp;&nbsp;Selim Çıracı, Pacific Northwest National Lab.<br />
+		&nbsp;&nbsp;Semih Bilgen, Okan Üniversitesi<br />
+		&nbsp;&nbsp;Suzan Üsküdarlı, Boğazici Üniversitesi<br />
+		&nbsp;&nbsp;Tolga Ayav, İzmir Yüksek Teknoloji Enstitüsü<br />
+		&nbsp;&nbsp;Tuğkan Tuğlular, İzmir Yüksek Teknoloji Enstitüsü<br />
+		&nbsp;&nbsp;Turgay Aytaç, Prescience Technologies Inc.<br />
+		&nbsp;&nbsp;Vahid Garousi, Hacettepe Üniversitesi<br />
+		&nbsp;&nbsp;Yasin Özarslan	Yaşar Üniversitesi<br />
+		&nbsp;&nbsp;Yasemin Topaloğlu, Ege Üniversitesi<br />
+		&nbsp;&nbsp;Yeliz Yeşilada, ODTÜ - KKTC Yerleşkesi<br />
+		&nbsp;&nbsp;Yunus Emre Selçuk, Yıldız Teknik Üniversitesi<br />
+		&nbsp;&nbsp;Zuhal Tanrıkulu, Boğazici Üniversitesi<br />
+		<br />
+		
+		<strong>Yayınlama Sorumlusu</strong><br />
+			&nbsp;&nbsp;Çiğdem Turhan, Atılım Üniversitesi<br />
+			&nbsp;&nbsp;Ahmet Çoşkunçay, Bilgi Grubu<br />
+		<br />
+				
+		<strong>Web Yönetimi</strong><br />	
+			&nbsp;&nbsp;İbrahim Cereci, Atılım Üniversitesi<br />
+			&nbsp;&nbsp;Emin Toksöz, Alanya HEP <br />
+		<br />
+		
+		<strong>Tanıtım-İletişim</strong><br />
+			&nbsp;&nbsp;Nihan Saldıraner, Alanya HEP <br />
+			&nbsp;&nbsp;Tuna Hacaloğlu, Atılım Üniversitesi<br />
+		<br />
+		
+		
+		<strong>Bütçe/Sponsorluk Sorumlusu</strong><br />		
+			&nbsp;&nbsp;Güzin Tirkeş, Atılım Üniversitesi<br />
+			&nbsp;&nbsp;Şebnem Köseoğlu, Alanya HEP<br />
+		<br />
+		
+		<strong>Yönlendirme Komitesi</strong><br />		
+			&nbsp;&nbsp;Ali Doğru, ODTÜ<br />
+			&nbsp;&nbsp;Oğuz Dikenelli, Ege Üniversitesi<br />
+			&nbsp;&nbsp;Onur Demirörs, ODTÜ<br />
+			&nbsp;&nbsp;Oya Kalıpsız, Yıldız Teknik Üniversitesi<br />
+			&nbsp;&nbsp;Yasemin Topaloğlu, Ege Üniversitesi<br />
+		<br />		
+        </div>
+		
+		
+	<!--CONTENT ENDS HERE-->
+
+		<div id="tertiaryContent">
+		<h3><strong>BİZİ TAKİP EDİN</strong></h3>
+            <table>
+                <tr>
+                    <td><a href="https://twitter.com/uymsempozyumu" name="twitter_share" target="_blank">
+                    <img alt="Twitter" height="35" src="images/twitter-bird-light-bgs.png" width="35" /></a>
+                    <a href="https://www.linkedin.com/groups/3893321/" name="linkedin" target="_blank">
+                        <img alt="Linkedin" src="images/linkedin.png" height="35" width="35"/></a>
+                    </td>
+                </tr>
+            </table>
+          
+			<a class="twitter-timeline" href="https://twitter.com/uymsempozyumu" lang='tr' data-tweet-limit="3">> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<img alt="Twitter" height="35" src="images/twitter-bird-light-bgs.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center" width="35" />
+			Tweets to @uymsempozyumu.</a>
+			
+            <br/>
+		    <br/>
+		    <h3><strong>SPONSORLAR</strong></h3>
+		</div>
+            <p>&nbsp;</p>
+    <div class="clear"></div>
+
+        <div id="footer">Copyright &copy;2017 UYMS. Site layout by <a href="http://www.freecsstemplates.org">Free CSS Templates</a>
+    <br /><p><right>Hosted on Github</p></right>
+    <p><right>Webmasters: Ibrahim Cereci, Emin Toksöz</p></right></div></div>
+
+
+
+</body>
+</html>
